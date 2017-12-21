@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DB_CONTROLE_COMPRASDataSet" targetNamespace="http://tempuri.org/DB_CONTROLE_COMPRASDataSet.xsd" xmlns:mstns="http://tempuri.org/DB_CONTROLE_COMPRASDataSet.xsd" xmlns="http://tempuri.org/DB_CONTROLE_COMPRASDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DB_CONTROLE_COMPRASConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_CONTROLE_COMPRASConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Minha_Lista.Properties.Settings.GlobalReference.Default.DB_CONTROLE_COMPRASConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TB_PRECO_PRODUTOTableAdapter" GeneratorDataComponentClassName="TB_PRECO_PRODUTOTableAdapter" Name="TB_PRECO_PRODUTO" UserDataComponentName="TB_PRECO_PRODUTOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DB_CONTROLE_COMPRASConnectionString (Settings)" DbObjectName="DB_CONTROLE_COMPRAS.dbo.TB_PRECO_PRODUTO" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NM_PRODUTO FROM dbo.TB_PRECO_PRODUTO</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NM_PRODUTO" DataSetColumn="NM_PRODUTO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DB_CONTROLE_COMPRASDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DB_CONTROLE_COMPRASDataSet" msprop:Generator_UserDSName="DB_CONTROLE_COMPRASDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_PRECO_PRODUTO" msprop:Generator_TableClassName="TB_PRECO_PRODUTODataTable" msprop:Generator_TableVarName="tableTB_PRECO_PRODUTO" msprop:Generator_TablePropName="TB_PRECO_PRODUTO" msprop:Generator_RowDeletingName="TB_PRECO_PRODUTORowDeleting" msprop:Generator_RowChangingName="TB_PRECO_PRODUTORowChanging" msprop:Generator_RowEvHandlerName="TB_PRECO_PRODUTORowChangeEventHandler" msprop:Generator_RowDeletedName="TB_PRECO_PRODUTORowDeleted" msprop:Generator_UserTableName="TB_PRECO_PRODUTO" msprop:Generator_RowChangedName="TB_PRECO_PRODUTORowChanged" msprop:Generator_RowEvArgName="TB_PRECO_PRODUTORowChangeEvent" msprop:Generator_RowClassName="TB_PRECO_PRODUTORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NM_PRODUTO" msprop:Generator_ColumnVarNameInTable="columnNM_PRODUTO" msprop:Generator_ColumnPropNameInRow="NM_PRODUTO" msprop:Generator_ColumnPropNameInTable="NM_PRODUTOColumn" msprop:Generator_UserColumnName="NM_PRODUTO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
